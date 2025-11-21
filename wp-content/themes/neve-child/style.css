@@ -1,0 +1,121 @@
+/*
+ Theme Name:   Neve Child
+ Theme URI:    https://yourwebsite.com
+ Description:  A child theme for Neve
+ Author:       Your Name
+ Author URI:   https://yourwebsite.com
+ Template:     neve
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  neve-child
+*/
+
+/* Import parent theme styles */
+@import url("../neve/style.css");
+
+.footer-bottom {
+	display: none !important;
+}
+
+.wp-social-link-instagram {
+	.wp-block-social-link-anchor {
+		svg {
+			display: inline-block;
+		    width: 30px;
+		    height: 30px;
+		    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+		    border-radius: 12px;
+		    position: relative;
+		    transition: transform 0.3sease, box-shadow 0.3sease;
+		}
+	}
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+	.elementor-element-474b39d {
+		display: none !important;
+	}
+	.elementor-element-7fc6390 {
+		display: none !important;
+	}
+	.elementor-element-16ec5ea {
+		display: none !important;
+	}
+
+	.elementor-element-5f2a619 {
+		display: none !important;
+	}
+	.elementor-element-0b1e60b {
+		display: none !important;
+	}
+	.elementor-element-d624ff8 {
+		display: none !important;
+	}
+}
+
+@media (min-width: 601px) {
+	.elementor-element-145c52f {
+		display: none !important;
+	}
+	.elementor-element-7435bd2 {
+		display: none !important;
+	}
+	.elementor-element-b4b1c2f {
+		display: none !important;
+	}
+	.elementor-element-c9ca6f5 {
+		display: none !important;
+	}
+}
+
+figcaption {
+	padding-top: 10px;
+	opacity: 1 !important;
+	font-size: 1.2em !important;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;	
+}
+.insta-link-white img {
+	filter: invert(1);
+}
+.insta-link-white span {
+	color: white;
+    font-weight: 800;
+}
+.insta-link-black span {
+	color: black;
+    font-weight: 800;
+}
+.custom-social-icons img {
+    filter: invert(1) grayscale(1) brightness(100%) contrast(100%);
+}
+
+header.header {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #da3e3e;
+}
+
+#header-grid {
+	flex: 1;
+}
+
+.custom-social-icons {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.custom-social-icons a {
+	height: 30px;
+}
